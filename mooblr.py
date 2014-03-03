@@ -59,4 +59,4 @@ for post in tumblrposts:
 		cur = con.cursor()
 		sql = u"INSERT IGNORE into mooblr (id,title,text,timestamp,url,slug) VALUES (%s,\"%s\",\"%s\",\"%s\",\"%s\",\"%s\")" % (tumblrid,mdb.escape_string(tumblrtitle),mdb.escape_string(tumblrtext),mdb.escape_string(tumblrdate),mdb.escape_string(tumblrurl),mdb.escape_string(tumblrslug))
 		cur.execute(sql)
-	con.commit()
+		con.commit()
